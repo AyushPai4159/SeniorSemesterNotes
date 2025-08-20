@@ -1,0 +1,39 @@
+Intro:
+
+
+- what makes good cs and bad cs research for video compression
+
+- lossless compression and video compression
+
+- most common resolution -> 1920 x 1080p
+
+
+
+- transmission from most video streamers -> 5-10 Mb/s (140 to 280 times smaller than actual result)
+
+
+- statistics/probability play a role in compression
+
+
+- entropy coding -> lossless technique to compress
+
+- temporal encoding -> knowing that the frame before is the same but a couple of pixels are different, so compress the same
+
+- entropy -> level of variability of future elements (lower is more predictable)
+
+- Pred/Residual Encoders -> analyze incoming frame with respect to state model (modified from previous frames/data)
+	- subtract the predicted value with the actual to get residual
+	- compress residual value slightly so once actual frame needs to be recreated -> predicted value + compressed residual
+
+
+
+- machine monitoring systems require video (like Tesla)-> less room for error
+
+- in traditional sense, entropy system that relies on entire data means no one can get on a stream midway without inconsistences
+	- so introduce blocks of data in which entropy is used
+
+
+- all blocks of data have different levels of quality, and can request high quality blocks with buffer to give time for download
+(DASH)
+
+HW: Read Shannon 1948 on Canvas (Part 1)
