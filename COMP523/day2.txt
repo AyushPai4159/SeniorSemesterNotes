@@ -1,0 +1,18 @@
+Day 2:
+
+- The 3 Ps: People, Process, and Product
+
+	- Its a product, not a program
+
+Fundamental Steps:
+	- Requirements, design, implementation, test, deployemnet, maintenance
+
+
+	- english is ambiguous, so make stuff precise and compact
+
+
+
+Three fundamental processes
+- Waterfall: do it once, traditional model, used for large projects (limited, heavy process) 
+- Spiral: Risk based, iterative but large releases
+- Iterative: many iterations, and each iteration is on a fixed cycle

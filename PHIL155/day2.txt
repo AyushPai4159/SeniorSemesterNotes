@@ -1,0 +1,39 @@
+Day 2:
+
+
+
+Key Terms:
+- Argument: someone is trying to convince you of something; quarrel 
+- Inference: someone is infering 
+- Premise: 
+- Conclusion: the conclusion
+- Derivation: proving the arguement with a series of steps (a proof)
+- Form
+- Validity: deductive validity, logical validity
+	- valid: necessarily truth-preserving in virtue of its form
+
+- Contradiction (True premises, False conclusion)
+
+- dialtheism: a proposition can be both true and false
+
+
+Enthymeme: Arguement where one or more premises are left out because they are assumed
+
+Categorical syllogisms: two premises, three classes/subjects (cats, mammals, vertebrates), each premises works with 2 of 3 categories
+	- Ex: All cats are mammals, all mammals are vertebrates -> all cats are vertebrates
+
+
+Existential Import: All cats can swim -> Some cats can swim
+	- without existential import, all cats can swim can be true with 0 cats
+
+
+Logical Implication vs Pragmatic Implication
+	- LI: one statement logically implies another statement if it implies
+
+	- PI: one statement logically follow to another because of practical reality
+		- Example is below
+	- Example: JTR: Its not raining
+		- Therefore, JTR believes that its not raining
+
+	This example works for PI, but not LI
+
