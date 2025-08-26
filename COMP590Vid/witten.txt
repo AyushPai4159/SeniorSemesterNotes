@@ -1,0 +1,10 @@
+
+
+Notes on witten text:
+
+
+Arithemtic Encoding is more flexible than Huffman encoding, especially for encoding symbols with probabilites close to one
+
+- how does decoding the range work in arithmetic encoding
+
+- What does symbol - 1 mean in the arithmetic encoding alg. 
