@@ -1,0 +1,9 @@
+Day 3:
+
+
+
+We must construct an arithmetic encoding model that uses integers:
+
+
+
+

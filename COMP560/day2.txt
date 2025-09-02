@@ -1,0 +1,10 @@
+
+
+Day 2:
+
+
+
+- the solution of a search problem is a sequence of choices (actions) that will take you from the start state to the goal
+
+
+
