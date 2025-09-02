@@ -1,0 +1,60 @@
+Day 5:
+
+
+
+- The heuristic should not over-estimate the goal
+
+
+
+relaxed heuristic - find an easier solution by making a few moves, and then convert your problem to get a better heuristic to the goal state
+	- ask this
+
+
+
+Tree Search: extra work:
+	- failure to detect repeated states can lead to exponentially more work
+
+
+
+h(n) <= cost(n, n') + h(n') for all n, n'
+
+
+is A* optimal: Tree search (yes if heuristic is admissible), Graph Search (yes consistent and admissible)
+
+
+Iterative deepening A* (IDA *) -> like IDS but change f-cost as budget for each iteration
+
+
+
+
+
+
+Adversarial Search:
+
+
+- Games as Search
+- Zero-sum games
+	- Minimax algorithm
+	- a - B pruning
+
+- Incorporating uncertainty
+
+
+
+Zero-Sum Games:
+
+- agents have opposite utilities
+
+
+
+Minimax adversarial search
+
+
+- playing with worst-possible case scenario path
+
+
+time complexity - O(b^m)
+
+
+
+
