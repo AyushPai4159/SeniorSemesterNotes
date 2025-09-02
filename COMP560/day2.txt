@@ -7,4 +7,21 @@ Day 2:
 - the solution of a search problem is a sequence of choices (actions) that will take you from the start state to the goal
 
 
+world state - a state that includes every detail of the environment
+
+search state - abstraction that keeps only "relevant" details for a problem
+
+
+
+
+Sudoku: has 10^81 state spaces available
+
+8-tile puzzle: 9!
+
+
+Number of nodes in entire tree:
+
+1 + b^2 + ... b^m = O(b^m)
+
+
 

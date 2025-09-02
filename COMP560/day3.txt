@@ -1,0 +1,51 @@
+Uniform Cost Search: traverse through cheapest node first 
+
+
+Strategy: expand a chapest node first, fringe is a priority queue
+
+
+Complete - find a solution, doesn't necessarily mean optimal
+
+
+Good: UCS is complete and optimal
+
+Bad: Explores options in every direction, no information about good information
+
+BFS uses too much memory compared to DFS
+
+
+
+
+
+
+Informed Search:
+
+- Greedy Best-first Search
+- A* search
+
+
+
+Greedy Best-first search
+
+- use h(n) to rank nodes in the fringe (set of nodes which haven't been touched)
+- expansion strategy
+	- expand the unexpanded node with lowest h-value
+	
+
+
+A* Search = UCS cost + Greedy Search cost
+
+
+When should we terminate A* -> when we expand the goal node after enqueuing it (in other words when dequeuing goal node)
+
+
+A heuristic h is admissible (optimistic) if 0 <= h(n) <= h*(n)
+
+where h*(n) is actual goal cost 
+
+
+
+
+
+
+
