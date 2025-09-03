@@ -1,0 +1,11 @@
+Day 5:
+
+
+
+- truth value: A value is either True or False
+
+- A -> B; antecendent -> consequent
+
+a. You have a sister only if you have a sibling
+b. if you have a sister, then you have a sibling
+c. if you have a silbling, then you have a sister

@@ -3,8 +3,20 @@
 Notes on witten text:
 
 
+- model is a way of calculating, in any given context, the distribution of probabilities to output the next input symbol. 
+
+
+- it is impossible to encode bits of a message less than that of the entropy of said message
+
 Arithemtic Encoding is more flexible than Huffman encoding, especially for encoding symbols with probabilites close to one
 
 - how does decoding the range work in arithmetic encoding
 
 - What does symbol - 1 mean in the arithmetic encoding alg. 
+
+
+def encode_symbol(symbol, model, I/O device):
+	range_width = high - low + 1
+	(prob-start, prob-end) = model.interval(symbol)
+	low = low + floor(range-width * prob-start)
+	high = low + floor(range-width * prob-end) - 1  
