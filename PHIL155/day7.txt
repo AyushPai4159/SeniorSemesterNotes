@@ -1,0 +1,51 @@
+Day 6: Truth Tables
+
+
+
+a | b | ~a |(a * b) | (a V b) | (a -> b) | (a <-> b)
+
+T | T | F | T | T | T | T
+
+
+/\ = therefore
+
+
+A
+
+~ A -> ~B
+
+~ B V C
+
+------------
+
+/\ C
+
+
+
+
+A | B | C | ~A -> ~B | ~B V C
+
+T | T | T |	T    |	  T
+  
+T   T | F |     T    | 	  F
+
+T   F | T |	T    | 	  T
+
+T   F   F |     T    |    T
+ 
+F   T   T |     F    |    T
+
+F   T   F |     F    |    F
+
+F   F   T |     T    |    T
+
+F   F   F |     T    |    T
+ 
+
+The truth of the premises don't guarantee the truth of conclusion because of Row 4, /\ invalid
+
+ 
+
+
+
+

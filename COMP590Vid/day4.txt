@@ -1,0 +1,24 @@
+Day 5:
+
+
+- frequency transform: take data spatially organized and observe the frequencies
+	- any time or space varying signals is a summation of sines and cosines
+
+
+- what are these basis functions?
+
+
+- Quantization Loss?
+
+
+- DC Coefficient - average signal value across a row/block
+
+
+- Color space used by TV and most digital media: Y'UV
+
+- 
+
+
+
+
+

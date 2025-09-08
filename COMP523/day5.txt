@@ -1,0 +1,30 @@
+
+
+HW:
+
+What should you be doing now?
+
+    team begins work on project website
+    teams will contact assigned client, make initial meeting
+    teams send me email (to class acct) with URL for project website
+
+
+
+
+What is functional spec:
+	- defines what the functionality will be
+	- describes features of the software product
+
+
+
+
+Types of requirements:
+	- Functional - services needed
+	- Usability - how easy it is to do it
+	- Performance - speed, capacity, memory
+	- Reliability and availability - failure rates
+	- error handling - how the handle
+	- interface - user and program
+	- constraints - systems and tolerances
+
+
