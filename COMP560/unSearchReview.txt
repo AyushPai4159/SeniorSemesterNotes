@@ -1,0 +1,31 @@
+
+
+Uninformed Search:
+
+
+A search problem requires:
+
+1. A state space
+2. A world model of how states will change in response to actions (like a successor function)
+3. Specification of a start state and a goal
+
+
+World state: includes every detail of environment at time-step
+
+Search state: state that keeps relevant details
+
+
+Example 1: 8-tile puzzle
+
+
+- states: locations of the 8 tiles and blank
+- succ func: up, down, left right, or leave blank
+- start state: given config
+- goal state: desired config
+
+
+
+- state space graph: mathematical representation of a search problem (nodes corresponding to individual states and edges corresponding to transitions between states)
+
+
+
