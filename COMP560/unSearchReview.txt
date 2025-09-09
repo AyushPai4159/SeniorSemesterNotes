@@ -28,4 +28,63 @@ Example 1: 8-tile puzzle
 - state space graph: mathematical representation of a search problem (nodes corresponding to individual states and edges corresponding to transitions between states)
 
 
+-------------------------------------------------------------
+
+DFS:
+
+
+Time complexity: What nodes are expanded?
+	• Some left prefix of the tree.
+	• Could process the whole tree!
+	• If m is finite, takes time O(bm) m tiers
+
+Space Complexity: How much space does the fringe take?
+	• Only has siblings on path to root, so O(bm)
+
+Complete?
+	• m could be infinite, so only if we prevent cycles
+
+Optimal?
+	• No, it finds the “leftmost” solution, regardless of depth or cost
+
+
+
+
+DFS Limited: Same as DFS but depth limited to l, so time and space complexity is O(bl)
+
+
+
+
+-------------------------------------------------------------
+
+BFS:
+
+
+Time Complexity: What nodes are expanded?
+	• Processes all nodes above shallowest solution. Let depth of shallowest solution be s. Search takes time O(bs) s tiers
+
+Space Complexity: How much space does the fringe take?
+	• Has roughly the last tier, so O(bs)
+
+Complete?
+	• s must be finite if a solution exists, so yes!
+
+Optimal?
+	• Only if costs are all 1 (more on costs
+
+
+-----------------------------------------------------------
+
+Uniform-Cost Search:
+
+
+Time Complexity: If C* is the cost of the shallowest solution and each "arc" costs at least E, then O(b^(C*/E))
+
+Space Complexity: O(b^(C*/E))
+
+Complete: Assuming best solution has finite cost and minimumm arc cost is positive, then yes
+
+Optimal: Yes
+
+
 
