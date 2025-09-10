@@ -1,0 +1,17 @@
+Permutations and Combinations:
+
+
+
+Suppose we have 3 history boooks and 4 math books. in how many ways can we arrange them on a bookshelf?
+	- 7!
+
+
+What if we want all math books together and all history books next to each other: 2 * 3! * 4!
+
+
+
+Combinations: nCk = (n! / ((k)!(n-k)!)
+
+
+
+factorials aren't good in computation

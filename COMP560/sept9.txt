@@ -1,0 +1,34 @@
+
+
+
+
+Bayes Rule :
+
+
+P(A | B) = 
+
+Given P(A /\ B)/P(B)
+
+
+P (A | B) = (P(B | A) * P(A))/P(B) 
+
+
+
+
+
+Applications of Bayes Rule for ML:
+
+
+- P(h): prior probability of hypothesis h. Reflects background knowledge; before data is observed. If no information,
+uniform distribution
+
+
+P(D) - probability that sample of data is observed
+
+
+P(D|h): probability of observing sample D, given hypothesis h is the target
+
+P(h | D): the posterior probability of h. The probability that h is given
+
+
+
