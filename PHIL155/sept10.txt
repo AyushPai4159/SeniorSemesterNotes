@@ -1,0 +1,26 @@
+9/10:
+
+
+
+
+Properties of a single wff:
+
+
+- Tautology - The wff is true regardless of combinations of boolean variables
+- Contradiction - The wff is false regardless of combinations of boolean variables
+- Contingency - The wff is false/true depending on combinations of boolean variables
+
+
+Relations with other wffs:
+
+- equivalence - Two wffs are logically equivalent iff they have the same truth values on every row
+- consistency - some wffs are consistent if there is at least one row where they are all true 
+- entailment - a wff "a" entails a wff "b" iff: there is now row where "a" is true but "b" is false
+	- "a" entails "b" iff a -> b is a tautology
+	- "a" entails "b" iff a * ~b is a contradiction
+
+
+
+
+
+
