@@ -1,0 +1,41 @@
+
+
+More Probability:
+
+
+- Entropy of a distribution:
+
+
+	- H(x) = - sum (i, k) of P(Xi) log P(Xi)
+
+- measure of uncertainty of a distribution
+
+
+- H(X) >= 0, achieved for P(X = Xi) = 1 for exactly one i
+- if probability of an outcome is 1, entropy = 0
+
+
+
+KL Divergence
+
+
+- measure of difference between 2 probability distributions
+
+
+
+
+BAYESIAN Networks:
+
+
+- general framework to parameterize probability distributions over many variables
+- structure of graph encodes modeling assumptions about the distribution 
+- 
+
+
+
+
+
+
+
+
+
