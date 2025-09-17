@@ -70,7 +70,7 @@ Complete?
 	• s must be finite if a solution exists, so yes!
 
 Optimal?
-	• Only if costs are all 1 (more on costs
+	• Only if costs are all 1 (more on costs)
 
 
 -----------------------------------------------------------
@@ -82,9 +82,37 @@ Time Complexity: If C* is the cost of the shallowest solution and each "arc" cos
 
 Space Complexity: O(b^(C*/E))
 
-Complete: Assuming best solution has finite cost and minimumm arc cost is positive, then yes
+Complete: Assuming best solution has finite cost and minimum arc cost is positive, then yes
 
 Optimal: Yes
+
+
+----------------------------------------------------------
+
+
+Beam Search:
+
+- Maintain a constant sized frontier of size w, and in case frontier gets bigger than w, prune out all of the worst/expensive node paths until size gets back to w. 
+
+- Complete: No
+
+- Optimal: No
+
+
+
+--------------------------------------------------------
+
+
+Iterative Deepening:
+
+
+- Depth Limited Search, but done iteratively on each depth
+- complete: yes
+- optimal: only if each step cost 1 (or in other words an unweighted graph)
+
+
+
+
 
 
 

@@ -1,0 +1,16 @@
+
+
+Truth-Functions
+
+
+
+- functions: mapping one set to another
+
+- The ground is wet, because it rained earlier
+
+
+	- therefore the ground is wet
+	- therefore it rained earlier
+	- but is the causal relationship true?
+
+

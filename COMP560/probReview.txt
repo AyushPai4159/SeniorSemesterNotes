@@ -1,0 +1,35 @@
+
+
+Probability: Informally, a calculus of uncertainities
+
+
+P(e) = Ne / N -> N is number of equally likely outcomes given e occurs Ne times
+
+
+An event E is a subset of S
+
+
+
+Takeaway: Probability is a function that maps events in the outcome space to the interval of [0,1]
+
+
+Axioms of probability:
+
+- All probabilities lie in [0,1]
+- Total probability of all possible outcomes is 1
+- Probabiltiy of Union of Events is the sum of the probabilites of each
+
+P(Y) = sum of joint probabilites of Y and Xi from i to k
+	- e.g. P(Y) = P(Y, x = v1) + P(Y, X=v2) + ... P(Y | X = vk)
+
+
+
+Bayes Rule: given P(B) > 0 then:
+
+
+P(A|B) = (P(B|A)P(A))/P(B)
+
+
+
+
+
