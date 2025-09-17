@@ -1,0 +1,43 @@
+
+
+
+I-frames: block of pixel use DC Transform to convert pixels into frequencies
+
+
+- every macroblock has a past reference to the reconstructed image block
+	- search for the closest block using sum of Absolute Differences
+
+
+
+- What is the difference between an I and P block?
+
+
+
+
+- quantization of the residual is where the video data loss occurs
+
+
+
+
+- MPEG2 - greater control managing reference frames
+	- partition motion block to identify more specific/closer frames of reference
+
+
+- Subsampling - lossy
+
+
+
+- Transform Coding: Transforming pixels into frequencies - lossless
+
+
+
+- Rolling List Encoding: Specific to encoding predicable values/characters within strings/lists of characters -> lossless
+
+
+- Pred. Encoding -> lossless
+
+
+- Quantization: should affect residual added to a compressed frame -> lossy
+
+
+-  

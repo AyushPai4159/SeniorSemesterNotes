@@ -1,0 +1,15 @@
+
+Sept 12:
+
+
+Arguement is valid iff there's no row where all premises are true while the conclusion is false
+
+
+
+A wff is  
+	- tautology iff: its true on every row
+	- contradiction iff: its false on every row
+	- contingency iff: its neither a tautology nor a contradiction
+
+
+A set of wffs is consistent iff: there is at least one row on which all of them are true together
