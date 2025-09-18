@@ -109,10 +109,18 @@ Iterative Deepening:
 - Depth Limited Search, but done iteratively on each depth
 - complete: yes
 - optimal: only if each step cost 1 (or in other words an unweighted graph)
+- space complexity -> O(bd)
+- time complexity -> O(bm)
 
+---------------------------------------------------------
 
+Bidirectional Traversal:
 
+Do two simultaneous traversals on opposite ends of a graph, especially if a goal is at the middle
 
+- select the path which is the cheapest 
+
+- Time/Space Complexity -> O(b^(d/2))
 
 
 

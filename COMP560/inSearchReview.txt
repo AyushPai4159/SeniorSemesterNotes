@@ -1,0 +1,32 @@
+Informed Search:
+
+
+- heuristic - approximate cost to get to the goal
+- h(n) = 0 when n is a goal node
+	- otherwise h(n) >= 0
+
+
+---------------------------------------------
+- greedy best-first search
+
+	- expand the unexpanded node with lowest h-value
+	- time complexity: O(b^m) -> given m is finite
+	- space complexity: O(b^m)
+---------------------------------------------
+
+- A* Search
+
+	- a combination of UCS and Greedy
+	- g(n) is cost of path to node n
+	- h(n) is estimate of reaching goal from node n
+	- f(n) = g(n) + h(n)
+	- When to terminate A* -> when we dequeue a goal (after expanding it)
+
+
+- inadmissible heuristics: pessimistic heuristics that break optimality by trappingood paths at the fringe
+
+
+- admissible heuristics: optimistic heuristics that will never outweigh the true costs
+
+
+
