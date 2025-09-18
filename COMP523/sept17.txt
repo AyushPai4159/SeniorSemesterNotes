@@ -1,0 +1,17 @@
+Extreme Programming:
+
+
+
+- Embraced change as normal
+- process must be lightweight and agile to respond to change
+
+- we will not put code until it is time
+
+
+- pair programming -> pair of people programming together per session
+
+
+- test-first development -> first write the tests, then the code 
+
+
+
