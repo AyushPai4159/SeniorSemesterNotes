@@ -1,0 +1,36 @@
+Derivations:
+
+
+
+- Q * R
+
+- R -> P
+
+--------------
+
+therefore P
+
+
+
+
+1. Q
+2. (P V Q) -> R
+-----------------
+3. P V Q    Add, 1
+4. Q V P    Add, 1
+5. R        MP 2,3
+
+
+
+1. P * (Q V R)
+2. P -> ~Q
+3. P      Simp 1
+4. Q V R  Simp 1
+5. ~Q     Modus Ponens 2,3
+6. R      Disjunctive Syllogism
+
+
+
+
+Modus : Manner
+Ponens: Affirming

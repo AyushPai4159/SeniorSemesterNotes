@@ -1,0 +1,58 @@
+Sept 18:
+
+
+
+- Live/Interactive vs Broadcast/On-Demand
+
+	- former to reduce delay
+	- latter is prerecorded that are delay tolerant, supporting scale
+
+
+
+
+- problems with delay:
+
+	- sampling delay: 
+	- compress delay:
+	- packetization
+	- transmission: router buffer accepts packets and transmit them into another 
+		- could be a bottleneck path
+		- delay is sum of buffer queue delay
+	- reception delay 
+
+
+
+
+
+TCP/IP -> provides a narrow-waste interface
+	- IP: best effort datagram machine to machine
+		- must deliver at least one package from one machine to another
+	- TCP: reliable byte stream, with every packet being connected to each other
+		- assigns every packet with a specific program or purpose on a machine
+		- port numbers
+		- packet numbers
+		- acknowledgement scheme
+		- congestion control
+
+
+
+	- Jitter: Variance of Delay
+
+	- congestion window = cong. + (1/cong.)
+
+
+
+- DASH -> current format for streaming
+
+	- progressive downloading
+
+	- ABR -> available bitrate streaming
+ 
+	- Netflix uses bitrate ladder to transmit 30 seconds blocks with a quality ranging from 20+ versions
+
+
+
+
+
+
+

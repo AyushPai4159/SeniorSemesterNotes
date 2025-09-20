@@ -1,0 +1,16 @@
+Sept 18:
+
+
+
+- Information Theory: the fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point
+
+
+- entropy: number bits spent in communication using the optimal codebook
+
+
+- cross-entropy: average message length under these circumstances
+
+
+
+
+- what is KL Divergence?

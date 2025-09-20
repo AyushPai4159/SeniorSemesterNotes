@@ -30,10 +30,6 @@ Informed Search:
 
 
 
-Informed Search Part 2:
-
-
-
 - a heuristic is admissible if 0 <= h(n) <= h*(n)
 
 	- h(n) is heuristic
@@ -63,3 +59,18 @@ Proof on A* Optimality:
 
 - all ancestors of A expand before B, therefore A will be reached first 
 - therefore, A* is optimal 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
