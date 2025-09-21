@@ -1,10 +1,9 @@
 
 
 
-User story 1: Terry TA wants to have a tool that can grade student's programmingassignments on a rubric basis, so she can give more qualitative commentary on each assignment. 
+User story 1: Terry TA wants to have a tool that can grade student's programming assignments based on a well-defined rubric, so she can give more qualitative commentary on each assignment. 
 
 
-User story 2: Tester Ted wants a tool that can simultaneously automate the Pytest process while also providing more detailed feedback based on how those tests stand up against a rubric.
-
+User story 2: Professor Pam wants to assign more creative/ambitious projects to students, by delegating a tool that can help grade technical parts/details from a rubric exponentially faster. 
  
 

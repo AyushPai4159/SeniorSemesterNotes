@@ -1,0 +1,13 @@
+
+
+1. MPEG Brief Look
+
+	- using MPEG1, playback is smooth if all or only a few frames needed to be decoded. This can be improved
+	- Goal: To integrate software-decoded MPEG streams into continuous playback systems, and anazlyze the quality of the streams.
+
+	- "Initially, this system supported 8kHz 8-bit audio and hardware-assisted motion JPEG compressed video streams.This paper describes the integration of a software decoded MPEG-i video stream into this system."
+
+
+2. Distributed MPEG System Brief Look
+	- Due to the internet's diversity of workload stations and random/dynamic access to media, we need a new client/server synchronization method.
+	- Instead of a software-feedback system that is developed ad-hoc and hardcoded to work for specific applications, make it more generalized by using a toolkit-based approach

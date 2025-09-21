@@ -1,0 +1,12 @@
+
+Adversarial Search:
+
+
+- Types of Games
+	- deterministic or stochastic
+	- perfect information (can you see the state)?
+	- one, two, or more players?
+	- turn-taking?
+	- zero sum (tie)?
+
+	
