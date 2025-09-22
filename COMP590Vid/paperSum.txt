@@ -23,13 +23,26 @@
 
 
 
+Paper 2 Summary:
 
 
+- want to provide the optimal synchroniztion between client and server stations to decrease frame drops and use better heuristics to adjustattributes such as frame rate given the state of the application and transmission of data packets
 
 
+- software feedback mechanisms are hardcoded and specific to the application they are running on, hard to give a general understanding on how it works since one version isn't ubitiquous on all platforms
 
+- solution: distributed, real-time, video-streaming system in which video servers are numerous
 
+- client buffers streams to reduce network jitter
 
+- trade presentation quality with reduced frame drops
 
+- two components to the toolkit approach, a feedback signal that filters out a system control information to input into a control algorithm machine, that compares the goal specification with feedback of the actual results to output an algorithm to fix the problem
 
+- the clocks that the server and client work on may differ, in which drift can happen substantively as time goes on
 
+- rather than drop frames at the intermediate stages of the pipeline, drop frames intelligently at the source of the pipeline
+
+- smoothness measure: presentation jitter -> actual logical time of frame - target logical time of frame
+
+- both berkley and this university rely on the same decoder, but the feedback mechanisms are built differently, with Berkely relying on NTP for synchronization and Oregon have software built-in the player for synchronization
