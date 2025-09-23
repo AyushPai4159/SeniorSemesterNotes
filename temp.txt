@@ -1,0 +1,54 @@
+Ayush Pai
+
+
+Paper 1: Rowe-1994-MPEG-Video-In-Software.pdf
+Paper 2: Cen-1995-Distributed_Real-Time_MPEG.pdf
+
+
+1. Generally what problem or application is being addressed by the paper?
+
+	Paper 1: Evaluating the effects of using a custom-built software decoder on a video playback system, specifically on playback smoothness and display frame rate
+
+	Paper 2: Make sure to optimize client/server synchronization using a client-based, tool-kit approach rather than using NTP. 
+
+
+
+2. Have the authors indicated succinctly how the work presented advances what had been known or done already or what the impact of the work is? (The answer may be no at this point in the paper). If yes, pick out one to a few sentences from the paper that you feel do this.
+
+	
+    Paper 1: Yes, there was a mention of how the playback systems initially supported “8kHz 8-bit audio and hardware assisted motion JPEG compressed video streams”, but now this research is trying to innovate by implementing a software-assisted approach.
+
+    Paper 2: Yes, this paper directly references Paper 1 as inspiration for their advances, specifically at the bottom of the paper where they mention the use of the same MPEG decoder. However, they want to advance the client/server synchronization technique by using a toolkit-based approach which isn't hardcoded and a superior alternative than using NTP.   
+
+
+
+3. Summarize the Paper:
+	Paper 1: The paper talks about how a software-decoder, which is a new implementation to decoding given there were already hardware-based approaches, affects the performance of video playback, specifically on the display frame rate and the frame drop. There was an introduction about the CM Architecture that the playback system is based on, where the CMS is the source of data and the CMX is the software running on the client machine to decode incoming packets from UDP. There was also clarification of what heuristics were used to adjust for frame drops or latency between frames received on the client machine and those that are displayed, such as using a weighted average of how many “macroblocks of frames” can be decoded as part of a deterministic algorithm that decides on whether to drop or display a frame on the buffer queue. At the end of the day, while the heuristics weren’t perfect in matching FPS Received and FPS Played in two test cases, specifically for the video with the larger image size, at least the statistics started to converge more as the target frame rate increases. It should be mentioned that decreased target frame rate let to decreased frame drops. 
+
+
+
+    Paper 2: This paper talks about using a client-based, tool-kit approach to software feedback mechanisms, as a response to legacy client/server synchronization approaches that have lead to clock drift, increased frame drops, and generally jerky playback. In introducing the software mechanisms, the researchers first dive into the player architecture, with not being much different from paper 1 except that it is clear that the Audio and Video Servers are distinct from each other, and TCP is used between these servers and the client to communicate control mechanisms. The next section talks about the innovation in the software feedback mechanism, which is a program in the client machine that takes in many parameters, such as the current server clock time, client clock time, frame display rate, frame target rate, and user-specified rate that are fed into a feedback filter and control algorithm to determine how to adjust the target frame rate and how to adjust the server clock to match the client clock. The player with the new QoS was tested against a MPEG Decoder, which the player was based on to evaluate the results, specifically in frame rate, smoothness, and video sever work ahead of time. According to the results, the new player dropped less frames, had smoother playback, and had greater video server work ahead of time, which may have contributed to the smoothness factor. 
+
+
+4. What are the three strengths of the paper?
+	Paper 1: The first strength of this paper is the transparency of its results, admitting that the heuristics aren’t perfect but have shown some promise with lower frame rates. The second strength is giving interesting insight on how the software decoder is optimizing playback by decreasing the amount of dependent frames (specifically B-type) and increasing I frames to be displayed. Lastly, the third strength is that the experiment questions and results are ordered well and have a consistent paragraph and figure aesthetic to them. 
+
+    Paper 2: A strength of this paper is the innovation and the clear results shown in section 5 that this software feedback mechanism has over previous legacy implementations. Another strength is the use of many diagrams and flowcharts that clearly explain how each architecture/feedback system works. Lastly, every section to me felt like it was useful context for the conclusion, with the former sections giving context on why the new innovation was needed and the latter sections describing and evaluating the innovation. 
+
+
+5. What are the three weaknesses of the paper
+	Paper 1: The first weakness is that I don’t know what specific software was built by the researchers. Did they create the heuristics in the MPEG modules or did they make the CM System? The second weakness is that it isn’t clear to me why an MPEG Video Viewer is being compared to the CM Playback system. I am guessing that the MPEG Video Viewer has some limitations that might make it dated but I don’t know what that is. Lastly, although good information, I feel much information about the clipfile structure (second 3.0) wasn’t useful context for the conclusion that focused on the performance of the playback. 
+
+
+    Paper 2: The first weakness of this paper is that it isn't explained why the current system control has to go through a feedback filter to extract the server work ahead of time. What possible signals are interferring with extracting that information without a filter? The second weakness of this paper is that it doesn't explain well what the "Threshold" values of Th and Tl refer to in determining the target frame rate. I can't think of a third weakness sorry. 
+
+6. In what way are these papers related? What are their differences?
+
+Both papers were written in the same decade, with the second paper being in many ways a follow up to the research done in the first paper. Both papers focus on software decoders and heuristics to optimize the playback smoothness and frame rate given the hardware state of components. The biggest difference I can see is that the second paper pursues client/server synchronization more than the first paper, having awareness that current solutions don't work practically in an Internet environment and uses a client-based mechanism instead of NTP. 
+	
+
+7. To what degree have the problems addressed been solved by today’s standards?
+
+
+Many of the problems, such as frame drops and network jitter are bettered by today's technologies, especially with CPUs getting faster at decoding packets and sending frames to a faster GPU, which can draw frames faster and with higher resolution. It should also be taken into account that servers, specially because of cloud infrastructure, have more effective CDNs now, with multiple servers having copies of content that serve a single 
+client machine on demand. However, given the rise of better technology are more users on the internet, which request media on their own clock time. Also, especially with the rise of live-server gaming, servers and clients have to exchange more information because now the client is more actively communicating the user's state at a regular basis. 
