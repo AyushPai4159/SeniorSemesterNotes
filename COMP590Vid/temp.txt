@@ -40,7 +40,7 @@ Paper 2: Cen-1995-Distributed_Real-Time_MPEG.pdf
 	Paper 1: The first weakness is that I don’t know what specific software was built by the researchers. Did they create the heuristics in the MPEG modules or did they make the CM System? The second weakness is that it isn’t clear to me why an MPEG Video Viewer is being compared to the CM Playback system. I am guessing that the MPEG Video Viewer has some limitations that might make it dated but I don’t know what that is. Lastly, although good information, I feel much information about the clipfile structure (second 3.0) wasn’t useful context for the conclusion that focused on the performance of the playback. 
 
 
-    Paper 2: The first weakness of this paper is that it isn't explained why the current system control has to go through a feedback filter to extract the server work ahead of time. What possible signals are interferring with extracting that information without a filter? The second weakness of this paper is that it doesn't explain well what the "Threshold" values of Th and Tl refer to in determining the target frame rate. I can't think of a third weakness sorry. 
+    Paper 2: The first weakness of this paper is that it isn't explained why the current system control has to go through a feedback filter to extract the server work ahead of time. What possible signals are interfering with extracting that information without a filter? The second weakness of this paper is that it doesn't explain well what the "Threshold" values of Th and Tl refer to in determining the target frame rate. I can't think of a third weakness sorry. 
 
 6. In what way are these papers related? What are their differences?
 
