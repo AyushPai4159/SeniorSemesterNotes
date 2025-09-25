@@ -9,4 +9,38 @@ Adversarial Search:
 	- turn-taking?
 	- zero sum (tie)?
 
-	
+
+- Minimax Search
+	- A state-space search tree
+	- Players alternate turns
+	- Compute each node's minimax value: the best achievable utility against a rational adversary
+
+- player 1 wants to maximize results based on the max of its successors
+- player 2 wants to maximize results based on the min of its successors
+
+----------------------------------------------------------------------
+
+Time complexity: O(b^m)
+
+Space complexity: O(bm)
+
+Complete: Yes if tree is finite
+
+Optimal - Yes against an optimal opponent
+
+
+
+----------------------------------------------------------------------
+
+
+Alpha-Beta Pruning:
+
+
+- Pruning a MIN node's children
+	- If we are pruning a min node's children
+		- let a be the best value that a max node can get at any choice point along current path
+		- if the current node's min value is less than a, max will avoid it
+
+- vise versa with pruning MAX node's children
+
+
