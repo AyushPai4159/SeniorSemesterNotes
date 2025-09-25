@@ -1,0 +1,23 @@
+Notes:
+
+
+Weaknesses of the 2nd paper:
+
+- assumed a certain level of resources/context
+
+- didn't separate their toolkit for feedback from the player as an application
+
+- didn't demonstrate or explain how it could be applied to other apps
+
+- how are they avoiding dropping an I or P frame
+
+	- is it always possible to seperate the feedback movement from the details of the system under control
+
+
+
+
+
+
+Window of Scarcity:
+
+- an innovation is possible in the window of scarcity if done cleverly with scarce resources
