@@ -1,0 +1,23 @@
+Design, Implementation, and Evaluation of a Point Cloud Codec for Tele-Immersive Video:
+
+- codec: compressor-decoder component
+
+
+Abstract:
+
+- presenting a codec for mixed-reality
+
+
+
+Introduction 
+- 3D point clouds are incredibly effective for mixed/augmented reality
+- but sending millions of points across a network requires good compression
+
+- much work in the past has been done to compress points progressively, giving lower quality 3d point graphs with partial bit streams
+- compression rate to geometric distortion was used to compare performance b/w solutions
+- parallelizability of processes is important for performance
+- better compression performance via intra prediction
+- codec requires both subjective and objectively quality assessments from the users
+
+
+- team introduces new codec that works for time-varying 3d point graphs for augmented/immersive video
