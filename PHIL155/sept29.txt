@@ -1,0 +1,64 @@
+
+
+1. P -> S
+2. Q V ~ (S v T)
+3. Q -> ~S		want: ~P
+--------------------------------------------
+4. Assume S		Hyp for RAA
+5. 	  ~Q            MT 3,4
+6. 	  ~(S V T)      DS 2,5
+7.         (S v T)      Add 4
+8.         (S v T) * ~(S v T) Conj 7,6
+9. ~S			RAA 4-8
+10. ~P			MT
+
+
+
+
+1. T * ~P
+2. ~Q V S    want: (P v Q) -> (S*T)
+----------------------------------
+3. Assume P v Q
+4.	    T		Simp 1
+5.	    ~P		simp 1
+6. 	    Q		DS 3,5
+7. 	    S           DS 2,6
+8.          S * T       Conj 4,7
+9. (P v Q) -> (S*T)     CP 3-8
+
+
+
+
+1. A v (B -> C)
+2. B * F	want: ~A -> (C * F)
+----------------------------------------
+3. B		simp 2
+4. F		simp 2
+5. Assume ~A    want: C * F
+6.	   B -> C  D.S. 1,5
+7. 	   C       MP 3,6
+8.         C * F   Conj 4,7
+9. ~A -> (C * F)   CP 5-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
