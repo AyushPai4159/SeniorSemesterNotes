@@ -21,3 +21,25 @@ Introduction
 
 
 - team introduces new codec that works for time-varying 3d point graphs for augmented/immersive video
+
+
+------------------------------------------
+
+A. Contributions:
+
+- In this paper, we aim to provide a generic 3D point cloud codec that can be compared with other codecs for point compression, and applied to any capturing setup that produces 3D point cloud data
+
+
+
+
+
+
+
+
+------------------------------------------------
+
+Other questions:
+
+- where are they viewing the 3d points from (VR or computer display)
+- 
+

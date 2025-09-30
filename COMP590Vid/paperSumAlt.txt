@@ -1,0 +1,37 @@
+
+VR Codec Summary:
+
+I. Introduction
+
+- 3D point rendering has many applications in mixed reality systems
+
+- "3D point clouds are a useful representation for 3D video streams in mixed reality systems"
+
+- "However, realistic reconstructed 3D point clouds may contain hundreds of thousands up to millions of points, and compression is critical to achieve efficient and real-time communication in bandwidth-limited networks."
+
+- in comparing solutions to compression of 3D point clouds, we used metrics compression rate, geometric distortion, and algorithmic complexity
+
+- but real-time performance is also important
+
+- introduces a time-varying codec that works on dynamic 3D points, which initially was static in previous codecs
+
+- "With these requirements in mind, we introduce a codec for time-varying 3D point clouds for augmented and immersive 3D video.
+
+- "Therefore, to enable true convergence between naturalistic and synthetic contents in immersive and augmented reality, object-based video compression of point clouds and
+3D meshes remains a challenge." 
+
+- "To illustrate this need further, we show some examples from a practical tele-immersive
+system that we have been working on in the last four years, the Reverie system"
+
+
+-  
+
+
+
+
+
+
+
+
+
+
