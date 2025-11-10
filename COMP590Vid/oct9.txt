@@ -1,0 +1,11 @@
+Research Topic 1: Async Video
+
+
+- Light is set and Time is variable compared to synchronous video
+
+
+
+Research Topic 2: Open Broadcast Exchange
+
+- client-ended compression for a dumb camera
+- yeah kmp doesn't like the police

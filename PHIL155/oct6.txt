@@ -1,0 +1,35 @@
+1. A <-> (B->C)  want:  ~(B * (A->C))
+-------------------------------------------
+2. A -> (B -> C) 	B.E 1
+3. (B -> C) -> A	B.E 1
+4. Assume (B * ~(A->C)) Hyp
+5. 	   B		Simp 4
+6.	   ~A->C        Simp 4
+7.         A * ~C	NC 6
+8.         A		Simp 7
+9.	   ~C		Simp 7
+10.        B->C	        MP 2,8
+11	   ~B		MT 9,10
+12. 	   B * ~B	Conj 5,11
+13.~(B * (A->C))	RAA  4-12
+
+
+
+1. ~(A -> (B v C))
+2. ~( (P v Q)) <-> (~C * ~B) )  want: Q -> R
+---------------------------------------------------
+3. ~(P v Q) <-> (~C * ~B)	NB 2
+4. ~(P v Q) -> (~C * ~B)	BE 3
+5. (~C * ~B) -> ~(P v Q)	BE 3
+6. Assume Q			Hyp
+7. 	  P v Q			Add 6
+8. 	  ~(~C * ~B)		MT 5,7
+9. 	  C v B			DeM 8
+10. 	  B v C			Comm 9
+11. 	  A * ~(B v C)		NC 1
+12. 	  ~(B v C)		Simp 11
+13. 	  Assume ~R
+14.		  (B v C) * ~(B v C) Conj 10,12
+15.	R			RAA 13-14
+
+(B v C) * ~(B v C)	

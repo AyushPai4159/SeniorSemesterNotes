@@ -1,0 +1,17 @@
+
+
+All As are Bs	:		Vx (x is a A -> x is B)
+
+Some A is a B   : 		Ex (x is a A * x is B)
+
+No A is B	: 		~Ex (x is a A * x is B)
+
+Only As are B	:		Vx (x is B -> x is a A)
+
+Some As are not Bs  :		Ex (x is A * x is ~B)
+
+
+
+
+
+

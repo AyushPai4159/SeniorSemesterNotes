@@ -1,0 +1,19 @@
+1. ~Ex (Dx * ~Cx)
+2. ~Vx (Dx -> Tx)
+--------------------------
+3. Vx ~(Dx * ~Cx) QN 1
+4. Vx (Dx -> Cx)  NC 3
+5. Vx (Dx -> Cx)  DN 4
+6. Ex ~(Dx -> Tx) QN 2
+7. Da -> Ca	  UE 5
+8. ~(Db -> Tb)	  EE 6, Flag b
+9. Db -> Cb	  UE 5
+10. Db * ~Tb      NC 8
+11. Db		  Simp 10
+12. Cb		  MP 9, 11
+13. ~Tb		  Simp 10
+14. Cb * ~Tb	  Conj 12, 13
+15. ~(Cb -> Tb)	  NC 14
+16. Ex ~(Cx -> Tx) EI 15
+17. ~Vx (Cx -> Tx)  QN 16
+

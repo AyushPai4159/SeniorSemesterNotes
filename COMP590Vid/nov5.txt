@@ -1,0 +1,104 @@
+Countering a Proposition:
+
+
+
+E.g. :
+
+
+1. Vx(Fx -> Gx) ; Go; therefore Fo  -> not valid
+
+
+Universe of Discourse: {1}
+
+o: 1
+	in	out
+F: 		1
+
+G:  	1	
+
+
+
+True iff everything in the U. of D satisfies:
+
+(Fx -> Gx)
+
+1: F -> T   :  True
+
+
+
+
+E.g.  2:
+
+
+
+(Ex (Fx) -> Vy(Gy -> Hy)) ; Fc; ~Hc; Ex(Hx * Dx); therefore ~Ex (Fx * Dx)
+
+
+Universe of Discourse: {1,2}
+
+
+c: 1
+
+
+	in	out
+F: 	1		
+G:		1,2
+H	2	1
+D:	1,2
+
+
+
+
+
+
+
+
+
+
+
+
+E.g. 3:
+
+
+
+Vx (Fx -> Gx);   Vx(Gx <-> Hx);   therefore Vx(Hx -> Fx)
+
+
+Universe of Discourse: {1}
+
+
+	in	out
+
+F:               1
+G:      1
+H:      1
+
+
+Final Answer:
+
+
+F = {}
+G = {1}
+H = {1}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

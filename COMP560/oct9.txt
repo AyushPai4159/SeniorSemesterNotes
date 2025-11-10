@@ -1,0 +1,8 @@
+Feedforward Networks:
+
+
+- output of one layer goes into an input into another layer
+
+- ReLU: activation of choice
+
+- 

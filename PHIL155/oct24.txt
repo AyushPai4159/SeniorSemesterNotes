@@ -1,0 +1,66 @@
+QL Derivations:
+
+
+1. Cr
+2. Vx (Cx -> Mx) 	want: Mr
+--------------------------------------
+3. Cr -> MR		UE 2	VE
+4. Mr			MP 1,3
+
+
+
+1. Vx ~(Hx * Kx)
+2. Vx (Ax -> Hx)
+3. Ac			want: ~Kc
+----------------------------------
+4. ~(Hc * Kc)		UE 1
+5. Ac -> Hc		UE 2
+6. ~Hc v ~Kc		DeM 4
+7. Hc -> ~Kc		CD 6
+8. Ac -> ~Kc		HS 5,7
+9. ~Kc			MP 3,8
+
+
+1. Vx (Cx -> Mx)
+2. Vx (Mx -> Vx)
+------------------------
+3.	Flag e
+4.	Ce -> Me	UE 1
+5.	Me -> Ve	UE 2
+6.	Ce -> Ve	HS 4,5
+7. Vx (Cx -> Vx)	UI 3-6
+
+
+
+
+1. Ex(Hx) -> Vx(Hx)
+2. Hj			want: Hm
+----------------------------------------------
+3. ExHx			EI 2
+4. Vx (Hx)		MP 1,3
+5. Hm			UE 4
+
+
+
+1. Vx (Cx -> Kx)
+2. Ex (Cx * Ox)         want: Ex(Kx * Ox)
+-------------------------------
+3. Cf * Of		EE  2, Flag F
+4. Cf			Simp 3
+5. Of			Simp 3
+6. Cf -> Kf		UE 1
+7. Kf			MP 4,6
+8. Kf * Of		Conj 7,5
+9. Ex (Kx * Ox)         EI 8
+
+
+
+
+
+
+
+
+
+
+
+

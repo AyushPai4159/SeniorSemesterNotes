@@ -1,0 +1,16 @@
+Semantic Kernel:
+
+- used for prompt engineering
+- used for copilot stack
+
+
+- Components of SK
+	- Kernel: Place to register components and settings
+	- Memories: provides context for user query
+	- Planner: takes user query and returns plan
+	- Connectors: bridge between diff. components and exchange info
+	- Plugins: set of functions that can be exposed to other apps/services
+
+
+
+

@@ -5,9 +5,9 @@ I. Introduction
 
 - 3D point rendering has many applications in mixed reality systems
 
-- "3D point clouds are a useful representation for 3D video streams in mixed reality systems"
+- "3D point clouds are a useful representation for 3D video streams in mixed reality systems" pg 1
 
-- "However, realistic reconstructed 3D point clouds may contain hundreds of thousands up to millions of points, and compression is critical to achieve efficient and real-time communication in bandwidth-limited networks."
+- "However, realistic reconstructed 3D point clouds may contain hundreds of thousands up to millions of points, and compression is critical to achieve efficient and real-time communication in bandwidth-limited networks." pg 1
 
 - in comparing solutions to compression of 3D point clouds, we used metrics compression rate, geometric distortion, and algorithmic complexity
 
@@ -15,16 +15,142 @@ I. Introduction
 
 - introduces a time-varying codec that works on dynamic 3D points, which initially was static in previous codecs
 
-- "With these requirements in mind, we introduce a codec for time-varying 3D point clouds for augmented and immersive 3D video.
+- "With these requirements in mind, we introduce a codec for time-varying 3D point clouds for augmented and immersive 3D video." pg 2
 
 - "Therefore, to enable true convergence between naturalistic and synthetic contents in immersive and augmented reality, object-based video compression of point clouds and
-3D meshes remains a challenge." 
+3D meshes remains a challenge." pg 2
 
 - "To illustrate this need further, we show some examples from a practical tele-immersive
-system that we have been working on in the last four years, the Reverie system"
+system that we have been working on in the last four years, the Reverie system" pg 2
 
 
--  
+-  "In this paper, we aim to provide a generic 3D point cloud codec that can be compared with other codecs for point cloud compression and applied to any capturing setup that produces 3D point cloud data." pg 4
+
+- "We first outline the requirements for point cloud compression, after which we detail the point cloud coding schematic" pg 4
+
+
+Section II
+
+- "Based on the numbering in the diagram in Fig. 4, we detail the most important components in the codec, which also correspond to our main contributions." pg 4
+
+- point cloud bounded box subdivided into octree, with center being the location
+- For compressing point-clouds via inter-predictive frame coding, use the Iterative Closest Point (ICP algorithm) to compute the rigid transformation, which can be quantized for compression, saving up to 30% bitrate
+
+- "The intra-frame coder consists of three stages (1, 2, and 3 in Fig. 4)."
+
+- "It first filters outliers and computes a bounding box." pg 5
+- "Second, it performs an octree composition of space." pg 5
+- "Third, entropy encoding of the resulting occupancy codes is performed." pg 5
+
+- before computing the bounding box, add filters to remove outlier points/nodes from the tree
+
+
+
+- enlarge the bounding box if needed, for a specific frame 
+
+
+
+- "Therefore, instead, we introduce a method based on existing
+legacy JPEG codec that exploits correlation present in the
+point cloud reconstructed from natural inputs." pg 6
+
+- Instead of
+mapping the octree directly to a graph and treating the color
+attributes as a graph signal, we map the color attributes
+directly to a structured JPEG image grid from a depth-first
+tree traversal." pg 6
+
+--------------------------------------------------------------------------------------
+
+25 Sentence Summary: 
+
+
+- "3D point clouds are a useful representation for 3D video streams in mixed reality systems" pg 1
+
+- "However, realistic reconstructed 3D point clouds may contain hundreds of thousands up to millions of points, and compression is critical to achieve efficient and real-time communication in bandwidth-limited networks." pg 1
+
+- "With these requirements in mind, we introduce a codec for time-varying 3D point clouds for augmented and immersive 3D video." pg 2
+
+- "Therefore, to enable true convergence between naturalistic and synthetic contents in immersive and augmented reality, object-based video compression of point clouds and 3D meshes remains a challenge." pg 2
+
+- "To illustrate this need further, we show some examples from a practical tele-immersive system that we have been working on in the last four years, the Reverie system" pg 2
+
+- "We have done some experimentation comparing RGB + D coding using MPEG-4 AVC simulcast (QP8–QP48, zero latency,x264 encoder) and point cloud compression (8–10 b perdirection component) using the point clouds in [2] recon-structed from 5 (RGB + D) streams (data available in [10], captured with Microsoft Kinect)."
+
+-  "In this paper, we aim to provide a generic 3D point cloud codec that can be compared with other codecs for point cloud compression and applied to any capturing setup that produces 3D point cloud data." pg 4
+
+- "We first outline the requirements for point cloud compression, after which we detail the point cloud coding schematic" pg 4
+
+
+- "Based on the numbering in the diagram in Fig. 4, we detail the most important components in the codec, which also correspond to our main contributions." pg 4
+    
+- "It first filters outliers and computes a bounding box." pg 5
+
+- "Second, it performs an octree composition of space." pg 5
+
+- "Third, entropy encoding of the resulting occupancy codes is performed." pg 5
+
+
+- "Instead, we follow a modified approach, taken from [3] (based on a carry-less-byte-based range coder), which we applied to the
+different decodable LoDs."
+
+- "Apart from coding the object geometry position,
+coding of color attributes is essential to achieve a
+high visual quality rendering." pg 6
+
+- "Therefore, instead, we introduce a method based on existing
+legacy JPEG codec that exploits correlation present in the
+point cloud reconstructed from natural inputs."
+
+- "The algorithm starts with the normalized and
+aligned I and P clouds (based on the bounding box alignment
+algorithm presented in Section III-A)."
+
+- "In the next step, (2) each of the macroblocks M_p is
+traversed to find if a corresponding macroblock exists in M_i."
+
+
+- "Each block in M_s will be a candidate for the prediction;
+two extra conditional stages are traversed before the predictive
+coding of the block is started."
+
+
+-"The prediction is performed based on comput-
+ing a rigid transform between the blocks mapping the points
+M_i to M_p"
+
+
+- "The proposed algorithm and bit streams have been designed
+to enable parallel execution."
+
+
+- "To evaluate the point cloud quality, we deploy a full
+reference quality metric that combines common practices from
+3D mesh and video compression: a Peak Signal to Noise Ratio
+(PSNR) metric based on point-to-point symmetric root-mean-
+square distances."
+
+
+- "Overall, the color coding scheme based on
+JPEG provides much lower bitrates and lower quality."
+
+
+- "For all tested data sets (based on capturing
+at 12 or 24 frames/s), over 60% of macroblocks are shared in
+aligned frames and approximately 30% are both shared and
+converging at the ICP stage"
+
+
+- "The results on perceived realism and the quality of
+the motion are shown in Figs. 26 and 27. All versions
+represent the user well and are judged between fair and
+good at 3.45 and 3.75 without significant differences."
+
+
+- " In this respect,
+the point cloud representation scored significantly better than
+the computer avatar (Fig. 29)."  
+
 
 
 

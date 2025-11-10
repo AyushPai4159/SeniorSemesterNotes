@@ -1,0 +1,11 @@
+Formal Verification:
+
+- Treat program as a mathematical process, with set amount of inputs and set amount of output left after the function runs
+
+
+- Invariant: a predicate/system that doesn't change in a program 
+
+- 
+
+
+

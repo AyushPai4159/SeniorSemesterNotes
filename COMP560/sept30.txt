@@ -1,0 +1,20 @@
+Linear Regression:
+
+
+- What is regression
+	- predicing a real-value (scalar) output based on a set of input features
+
+
+y = (w^T * x) + b
+
+
+- can be thought of as one-layer neural network
+
+
+large w values are bad because they might overfit the training values, so new values can't be predicted as well. 
+
+
+- use a lambda minimization function to reduce the slope of the LSRL 
+
+
+
